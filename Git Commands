@@ -1,0 +1,47 @@
+git remote set-url origin https://RafayJavedGigaLabs:Bon81995@github.com/RafayJavedGigaLabs/graphql_mongo_app.git
+
+
+https://github.com/RafayJavedGigaLabs/graphql_mongo_app/
+
+
+// Add unversioned code
+git add *
+
+// Commir changes
+git commit - "Commit Message"
+
+//Push to git
+git push
+
+// Get all branches of a repository
+git branch -a
+
+// Create a new branch
+git checkout -b *branch-name*
+
+//Change branch
+git checkout *branch-name*
+
+//Check status
+git status
+
+//Push the current branch set the remote ans upstream
+git push --set-upstream origin hello-branch
+
+//Merge branches
+git merge hello-branch --no--ff
+
+//Delete a branch
+git branch -d branchName
+
+//Merge logs
+git log --merge
+
+// Difference between states of a repositroy/files
+git diff
+
+//Clone a repository
+git clone https://github.com/RafayJavedGigaLabs/help.git
+
+// Pull
+git pull https://github.com/RafayJavedGigaLabs/graphql_mongo_app main

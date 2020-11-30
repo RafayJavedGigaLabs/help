@@ -1,0 +1,55 @@
+mutation{
+  createEvent(eventInput: {title: "Paintball", description: "Shoot the paint balls",price: 17.55, date: "2020-11-25T11:13:29.692Z"}){
+    title
+  }
+}
+
+mutation{
+  createUser(userInput: {email: "test@test.com", password: "tester"}){
+    _id
+  }
+}
+
+
+mutation{
+  bookEvent(eventId: "5fbe2b51661bdd4948926281"){
+    _id
+    createdAt
+  }
+}
+query {
+  events {
+    title
+    creator {
+      email
+    }
+  }
+}
+
+
+mutation {
+  bookEvent(eventId: "5fbe2b51661bdd4948926281") {
+    _id
+    createdAt
+    user{
+      email
+    }
+  }
+}
+
+
+git remote set-url origin https://RafayJavedGigaLabs:Bon81995@github.com/RafayJavedGigaLabs/graphql_mongo_app.git
+
+
+https://github.com/RafayJavedGigaLabs/graphql_mongo_app/
+
+-- Postman Query
+
+{
+	"query": "query { login(email:\"test@test.com\",password: \"tester\") {token}}"
+}
+
+{
+"query": "mutation{ createEvent(eventInput: {title: \"Should work\", description: \"This now works!\", price: 39.99, date: \"2018-12-13T09:51:23.077Z\"}){_id title} }"
+}	
+
